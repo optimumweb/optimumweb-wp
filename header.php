@@ -27,7 +27,7 @@
         </header>
         <?php wpbp_header_after() ?>
         <?php if ( is_front_page() ) : ?>
-            <div id="hero">
+            <div id="hero" class="hero">
                 <?php dynamic_sidebar( 'Front Page Hero' ) ?>
             </div>
         <?php endif ?>
