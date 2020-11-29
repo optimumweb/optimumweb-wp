@@ -7,6 +7,7 @@ function enqueue() {
 		// scripts
 		wp_enqueue_script( 'theme', THEME_URI . '/js/scripts.js', array( 'jquery' ) );
 		// styles
+        wp_enqueue_style ( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,400&display=swap' );
 		wp_enqueue_style( 'theme', THEME_URI . '/css/master.css', array( 'wpbp' ) );
 	}
 }
