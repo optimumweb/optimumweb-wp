@@ -4,7 +4,7 @@
         <?php wpbp_header_before() ?>
         <header id="header">
             <?php wpbp_header_inside_before() ?>
-            <div class="<?php wpbp_container_class() ?>">
+            <div class="<?php wpbp_container_class() ?> fluid">
                 <div class="grid_3 mobile-center">
                     <h1 id="site-logo">
                         <a href="<?php echo home_url() ?>" title="<?php bloginfo( 'name' ) ?> - <?php bloginfo( 'description' ) ?>">
