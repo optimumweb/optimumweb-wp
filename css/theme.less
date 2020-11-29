@@ -18,12 +18,14 @@ body {
 
 #site-logo {
   max-width: 160px;
-  margin: 0;
+  margin: 1rem 0;
+
+  a, img {
+    display: block;
+  }
 }
 
 #main-nav {
-  text-transform: uppercase;
-
   ul {
     li {
       display: inline-block;
@@ -33,6 +35,10 @@ body {
 
   a {
     color: @white;
+    font-size: @small-font-size;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
 
