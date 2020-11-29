@@ -18,7 +18,7 @@
                     </nav>
                 </div>
                 <div class="grid_3 text-right mobile-center">
-                    <div id="cta">
+                    <div id="header-cta">
                         <?php dynamic_sidebar( 'Header CTA' ) ?>
                     </div>
                 </div>
