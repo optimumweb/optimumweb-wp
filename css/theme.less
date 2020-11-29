@@ -11,16 +11,18 @@ body {
 .button,
 button {
   display: inline-block;
-  padding: 1em 1.5em;
+  padding: 0.5em 1em;
   background-color: @teal;
   color: @white;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: @small-radius;
+  .transition();
 
   &:hover {
     color: @white;
-    background-color: darken(@teal, 10%);
+    text-decoration: none;
+    background-color: darken(@teal, 5%);
   }
 }
 
