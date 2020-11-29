@@ -34,11 +34,16 @@ body {
   }
 
   a {
+    display: block;
     color: @white;
     font-size: @small-font-size;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      border-bottom: 1px solid @teal;
+    }
   }
 }
 
