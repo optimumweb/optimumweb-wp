@@ -42,7 +42,21 @@ body {
   }
 }
 
-#hero {
+.hero {
   background-color: @grey-dark;
   padding: 10rem 0;
+
+  .hero-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .hero-overlay {
+    background-color: @grey-dark-75;
+  }
+
+  .hero-padding {
+    padding: 15rem 0;
+  }
 }
