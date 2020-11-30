@@ -42,6 +42,7 @@ button {
 }
 
 html.is-scrolled #header {
+  padding: 0.5rem 0;
   background-color: @grey-dark;
 }
 
@@ -78,9 +79,10 @@ html.is-scrolled #header {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    border-bottom: 2px solid transparent;
 
     &:hover {
-      border-bottom: 2px solid @teal;
+      border-color: @teal;
     }
   }
 }
