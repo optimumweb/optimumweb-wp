@@ -13,7 +13,7 @@ function enqueue() {
 }
 add_action( 'init', 'enqueue' );
 
-wpbp_register_sidebars( array( 'Header CTA', 'Front Page Hero' ) );
+wpbp_register_sidebars( array( 'Front Page Hero' ) );
 
 register_nav_menus( array(
     'header_cta_navigation' => __("Header CTA Navigation", 'optimumweb-wp'),
