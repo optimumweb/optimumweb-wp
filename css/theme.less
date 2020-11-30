@@ -8,6 +8,11 @@ body {
   color: @text-color;
 }
 
+a {
+  color: @teal;
+  .transition();
+}
+
 .button,
 button {
   display: inline-block;
@@ -33,6 +38,10 @@ button {
   top: 0;
   left: 0;
   right: 0;
+}
+
+html.is-scrolled #header {
+  background-color: @grey-dark-75;
 }
 
 #site-logo {
