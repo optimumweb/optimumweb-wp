@@ -18,8 +18,8 @@
                     </nav>
                 </div>
                 <div class="grid_3 text-right mobile-center">
-                    <div id="header-cta">
-                        <?php dynamic_sidebar( 'Header CTA' ) ?>
+                    <div id="header-cta-nav">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header_cta_navigation' ) ) ?>
                     </div>
                 </div>
             </div>
