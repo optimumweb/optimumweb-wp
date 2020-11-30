@@ -33,10 +33,20 @@ button {
   border-radius: @small-radius;
   .transition();
 
+  * {
+    color: @white;
+    text-decoration: none;
+  }
+
   &:hover {
     color: @white;
     text-decoration: none;
     background-color: darken(@teal, 5%);
+
+    * {
+      color: @white;
+      text-decoration: none;
+    }
   }
 }
 
