@@ -45,6 +45,15 @@ button {
     text-decoration: none;
   }
 
+  .button-bordered {
+    background-color: transparent;
+    border: 2px solid @white;
+
+    &:hover {
+      background-color: @grey-dark-25;
+    }
+  }
+
   &:hover {
     color: @white;
     text-decoration: none;
@@ -54,6 +63,37 @@ button {
       color: @white;
       text-decoration: none;
     }
+  }
+}
+
+.box {
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: @radius;
+
+  &.box-white {
+    background-color: @white;
+    color: @grey-dark;
+  }
+
+  &.box-black {
+    background-color: @black;
+  }
+
+  &.box-grey-dark {
+    background-color: @grey-dark;
+  }
+
+  &.box-teal {
+    background-color: @teal;
+  }
+
+  &.box-purple {
+    background-color: @purple;
+  }
+
+  &.box-red {
+    background-color: @red;
   }
 }
 
