@@ -147,13 +147,13 @@ html.is-scrolled #header {
     text-decoration: none;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
-
-    &:hover {
-      border-color: @teal;
-    }
   }
 
   ul.menu > li {
+    &:hover > a {
+      border-color: @teal;
+    }
+
     ul.sub-menu {
       display: none;
       margin: 0;
