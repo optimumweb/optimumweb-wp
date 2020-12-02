@@ -155,8 +155,9 @@ html.is-scrolled #header {
     > li {
       ul.sub-menu {
         margin: 0;
+        opacity: 0;
         position: absolute;
-        top: -10rem;
+        top: 100%;
         left: 0;
         width: 100%;
         .transition();
@@ -168,7 +169,7 @@ html.is-scrolled #header {
 
       &:hover {
         > ul.sub-menu {
-          top: 100%;
+          opacity: 1;
         }
       }
     }
