@@ -4,7 +4,7 @@ $(document).ready(function() {
         $html = $('html'),
         $body = $('body'),
         $header = $('#header'),
-        $menuBurger = $('#menu-burger'),
+        $burger = $('#burger'),
         $mainNav = $('#main-nav'),
         $headerCtaNav = $('#header-cta-nav');
 
@@ -22,11 +22,10 @@ $(document).ready(function() {
 
     }).trigger('check-scroll');
 
-    $menuBurger.on('click', function (e) {
+    $burger.on('click', function (e) {
         e.preventDefault();
 
-        $mainNav.toggle();
-        $headerCtaNav.toggle();
+        $header.toggleClass('is-open');
     });
 
 });

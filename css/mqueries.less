@@ -9,22 +9,30 @@
 // Medium and less
 @media screen and (max-width: 64rem) {
 
-  #menu-burger {
+  #burger {
     display: block;
   }
 
-  #main-nav {
-    display: none;
+  #header {
+    #main-nav,
+    #header-cta-nav {
+      display: none;
+    }
+
+    &.is-open {
+      background-color: @grey-dark;
+      
+      #main-nav,
+      #header-cta-nav {
+        display: block;
+      }
+    }
 
     ul.menu {
       > li {
         display: block;
       }
     }
-  }
-
-  #header-cta-nav {
-    display: none;
   }
 
 }
