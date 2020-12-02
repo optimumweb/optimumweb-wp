@@ -24,9 +24,13 @@
     <?php wpbp_main_before(); ?>
     <section id="main" role="main">
         <?php wpbp_main_inside_before(); ?>
-        <?php wpbp_loop_before(); ?>
-        <?php get_template_part( 'loop' ); ?>
-        <?php wpbp_loop_after(); ?>
+        <div class="<?php wpbp_container_class(); ?>">
+            <div class="grid_12">
+                <?php wpbp_loop_before(); ?>
+                <?php get_template_part( 'loop', 'single' ); ?>
+                <?php wpbp_loop_after(); ?>
+            </div>
+        </div>
         <?php wpbp_main_inside_after(); ?>
     </section>
     <?php wpbp_main_after(); ?>

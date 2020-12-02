@@ -21,13 +21,11 @@ get_header(); ?>
     <section id="main" role="main">
         <?php wpbp_main_inside_before(); ?>
         <div class="<?php wpbp_container_class(); ?>">
-            <div class="<?php wpbp_container_class(); ?>">
-                <div class="grid_12">
-                    <div class="block_grid by_3">
-                        <?php wpbp_loop_before(); ?>
-                        <?php get_template_part( 'loop', 'home' ); ?>
-                        <?php wpbp_loop_after(); ?>
-                    </div>
+            <div class="grid_12">
+                <div class="block_grid by_3">
+                    <?php wpbp_loop_before(); ?>
+                    <?php get_template_part( 'loop', 'home' ); ?>
+                    <?php wpbp_loop_after(); ?>
                 </div>
             </div>
         </div>
