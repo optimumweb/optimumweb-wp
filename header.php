@@ -11,6 +11,9 @@
                             <img src="<?php echo THEME_URI . '/img/logo-dark.png' ?>" width="400" height="60" alt="<?php bloginfo( 'name' ) ?>">
                         </a>
                     </h1>
+                    <a class="menu-burger" href="#main-nav">
+                        <i class="fal fa-bars"></i>
+                    </a>
                 </div>
                 <div class="grid_6 text-center">
                     <nav id="main-nav">
