@@ -131,13 +131,6 @@ html.is-scrolled #header {
 }
 
 #main-nav {
-  ul {
-    li {
-      display: inline-block;
-      padding: 1rem;
-    }
-  }
-
   a {
     display: block;
     padding: 0.25rem 0;
@@ -149,11 +142,18 @@ html.is-scrolled #header {
     border-bottom: 2px solid transparent;
   }
 
-  ul.menu > li {
-    &:hover > a {
-      border-color: @teal;
-    }
+  ul {
+    li {
+      display: inline-block;
+      padding: 1rem;
 
+      &:hover > a {
+        border-color: @teal;
+      }
+    }
+  }
+
+  ul.menu > li {
     ul.sub-menu {
       display: none;
       margin: 0;
