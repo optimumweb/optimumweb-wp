@@ -4,7 +4,27 @@
    ========================================================================== */
 
 // Small
-@media screen and (max-width: 40rem) {}
+@media screen and (max-width: 40rem) {
+
+  .menu-burger {
+    display: block;
+  }
+
+  #main-nav {
+    display: none;
+
+    ul.menu {
+      > li {
+        display: block;
+      }
+    }
+  }
+
+  #header-cta-nav {
+    display: none;
+  }
+
+}
 
 // Medium
 @media screen and (min-width: 40.063rem) and (max-width: 64rem) {}
