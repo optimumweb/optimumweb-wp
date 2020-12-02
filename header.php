@@ -6,11 +6,11 @@
             <?php wpbp_header_inside_before() ?>
             <div class="<?php wpbp_container_class() ?> fluid">
                 <div class="grid_3 mobile-center">
-                    <h1 id="site-logo">
+                    <div id="site-logo">
                         <a href="<?php echo home_url() ?>" title="<?php bloginfo( 'name' ) ?> - <?php bloginfo( 'description' ) ?>">
                             <img src="<?php echo THEME_URI . '/img/logo-dark.png' ?>" width="400" height="60" alt="<?php bloginfo( 'name' ) ?>">
                         </a>
-                    </h1>
+                    </div>
                     <a id="burger" href="#">
                         <i class="fal fa-bars"></i>
                     </a>
