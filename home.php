@@ -2,15 +2,21 @@
 get_header(); ?>
 <?php wpbp_content_before(); ?>
 <section id="content">
-    <header class="page-header" style="background-image: url('<?php echo get_featured_image_url(); ?>');">
-        <div class="<?php wpbp_container_class(); ?>">
-            <div class="grid_12">
-                <h1 class="page-title">
-                    <?php _e( 'Latest Posts', 'wpbp' ); ?>
-                </h1>
+    <section class="hero">
+        <div class="hero-cover" style="background-image: url('<?php echo get_featured_image_url(); ?>');">
+            <div class="hero-overlay">
+                <div class="hero-padding">
+                    <div class="<?php wpbp_container_class(); ?>">
+                        <div class="grid_12">
+                            <h1 class="page-title">
+                                <?php _e( 'Latest Posts', 'wpbp' ); ?>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
     <?php wpbp_main_before(); ?>
     <section id="main" role="main">
         <?php wpbp_main_inside_before(); ?>
