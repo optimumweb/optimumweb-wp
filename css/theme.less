@@ -25,6 +25,22 @@ p {
   }
 }
 
+h1 {
+  &:before,
+  &:after {
+    display: inline;
+    color: @red;
+  }
+
+  &:before {
+    content: "{";
+  }
+
+  &:after {
+    content: "}";
+  }
+}
+
 hr {
   border: 0;
   margin: 0;
