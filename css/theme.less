@@ -143,8 +143,6 @@ html.is-scrolled #header {
   }
 
   ul {
-    .transition();
-    
     li {
       display: inline-block;
       padding: 1rem;
@@ -157,12 +155,12 @@ html.is-scrolled #header {
 
   ul.menu > li {
     ul.sub-menu {
-      display: none;
       margin: 0;
       position: absolute;
       top: 100%;
       left: 0;
       width: 100%;
+      .transition();
 
       a {
         font-weight: normal;
@@ -171,7 +169,7 @@ html.is-scrolled #header {
 
     &:hover {
       ul.sub-menu {
-        display: block;
+        top: -10rem;
       }
     }
   }
