@@ -283,16 +283,6 @@ html.is-scrolled #header,
 }
 
 .post {
-  .post-thumbnail {
-    a, img {
-      display: block;
-    }
-
-    img {
-      border-radius: @radius;
-    }
-  }
-
   h2.post-title {
     font-size: 1.5em;
     margin-bottom: 0;
@@ -313,6 +303,23 @@ html.is-scrolled #header,
     padding: 2rem;
     background-color: @black-25;
     border-radius: @radius;
+
+    .post-thumbnail {
+      background-color: @teal;
+
+      a, img {
+        display: block;
+      }
+
+      img {
+        border-radius: @radius;
+        .transition();
+      }
+
+      &:hover img {
+        opacity: 0.5;
+      }
+    }
 
     .post-content {
       font-size: 1em;
