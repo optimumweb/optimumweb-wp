@@ -160,7 +160,6 @@ html.is-scrolled #header {
       top: -10rem;
       left: 0;
       width: 100%;
-      opacity: 0.01;
       .transition();
 
       a {
@@ -171,7 +170,10 @@ html.is-scrolled #header {
     &:hover {
       ul.sub-menu {
         top: 100%;
-        opacity: 1;
+
+        > li {
+          background-color: @grey-dark-75;
+        }
       }
     }
   }
