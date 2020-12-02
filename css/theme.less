@@ -278,11 +278,13 @@ html.is-scrolled #header,
   background-color: @teal;
 }
 
-.post {
+.post-container {
   padding: 1rem;
-  background-color: @black;
+  background-color: @black-50;
   border-radius: @radius;
+}
 
+.post {
   .post-thumbnail {
     a, img {
       display: block;
@@ -310,6 +312,8 @@ html.is-scrolled #header,
   }
 
   &.loop {
+    padding: 1rem;
+
     .post-content {
       font-size: 1em;
     }
