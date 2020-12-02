@@ -12,7 +12,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
     <?php wpbp_post_before(); ?>
     <div class="post-container">
-        <article id="post-<?php the_ID(); ?>" <?php post_class('loop box box-grey-dark'); ?>>
+        <article id="post-<?php the_ID(); ?>" <?php post_class('loop box box-black-25'); ?>>
             <?php wpbp_post_inside_before(); ?>
             <?php if ( has_post_thumbnail() ) : ?>
                 <div class="post-thumbnail">
