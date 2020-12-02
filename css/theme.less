@@ -28,10 +28,13 @@ p {
 }
 
 h1 {
+  padding-left: 2rem;
+
   &:before,
   &:after {
-    display: inline;
+    display: block;
     color: @red;
+    margin-left: -2rem;
   }
 
   &:before {
