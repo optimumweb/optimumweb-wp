@@ -164,12 +164,14 @@ html.is-scrolled #header {
 
       > ul.sub-menu {
         display: inline-block;
+        min-width: 200px;
         margin: 0;
         opacity: 0;
         visibility: hidden;
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         .transition();
 
         > li {
