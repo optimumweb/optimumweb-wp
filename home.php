@@ -2,7 +2,7 @@
 get_header(); ?>
 <section class="hero">
     <div class="hero-cover" style="background-image: url('<?php echo get_featured_image_url(); ?>');">
-        <div class="hero-overlay">
+        <div class="hero-overlay is-grey-dark">
             <div class="hero-padding">
                 <div class="<?php wpbp_container_class(); ?>">
                     <div class="grid_12">
