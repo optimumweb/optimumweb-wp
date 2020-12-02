@@ -28,13 +28,10 @@ p {
 }
 
 h1 {
-  padding-left: 2rem;
-
   &:before,
   &:after {
-    display: block;
+    display: inline;
     color: @red;
-    margin-left: -2rem;
   }
 
   &:before {
@@ -43,6 +40,16 @@ h1 {
 
   &:after {
     content: "}";
+  }
+
+  &.indent {
+    padding-left: 2rem;
+
+    &:before,
+    &:after {
+      display: block;
+      margin-left: -2rem;
+    }
   }
 }
 
