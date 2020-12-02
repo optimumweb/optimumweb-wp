@@ -238,3 +238,23 @@ html.is-scrolled #header,
   font-size: @small-font-size;
   background-color: @teal;
 }
+
+body.blog {
+  #main {
+    > .post {
+      width: 50%;
+      float: left;
+      margin: 1rem;
+
+      &:nth-child(2n) {
+        &:after {;
+          display: block;
+          width: 1px;
+          height: 1px;
+          clear: both;
+          content: "";
+        }
+      }
+    }
+  }
+}
