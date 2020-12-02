@@ -17,13 +17,11 @@ get_header(); ?>
         <div class="<?php wpbp_container_class(); ?>">
             <div class="<?php wpbp_container_class(); ?>">
                 <div class="grid_12">
-                    <ul class="block_grid by_3">
+                    <div class="block_grid by_3">
                         <?php wpbp_loop_before(); ?>
-                        <li>
-                            <?php get_template_part( 'loop', 'home' ); ?>
-                        </li>
+                        <?php get_template_part( 'loop', 'home' ); ?>
                         <?php wpbp_loop_after(); ?>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
