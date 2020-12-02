@@ -18,35 +18,42 @@
     display: none;
   }
 
-  #main-nav {
-    ul.menu {
-      display: inline-block;
+  #header {
+    #main-nav,
+    #header-cta-nav {
+      display: block;
+    }
 
-      > li {
+    #main-nav {
+      ul.menu {
         display: inline-block;
 
-        > ul.sub-menu {
-          display: block;
-          width: 14rem;
-          opacity: 0;
-          visibility: hidden;
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%);
+        > li {
+          display: inline-block;
 
-          > li {
-            display: block;
-          }
-        }
-        
-        &:hover {
           > ul.sub-menu {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
+            display: block;
+            width: 14rem;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
 
+            > li {
+              display: block;
+            }
+          }
+
+          &:hover {
+            > ul.sub-menu {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+
+        }
       }
     }
   }
