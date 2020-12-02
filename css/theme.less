@@ -279,6 +279,14 @@ html.is-scrolled #header,
 }
 
 .post {
+  .post-thumbnail {
+    border-radius: @radius;
+
+    a, img {
+      display: block;
+    }
+  }
+
   h2.post-title {
     font-size: 1.5em;
     margin-bottom: 0;
@@ -295,7 +303,7 @@ html.is-scrolled #header,
     font-size: 1.25em;
   }
 
-  &.post-thumbnail {
+  &.loop {
     .post-content {
       font-size: 1em;
     }
