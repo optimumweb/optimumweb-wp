@@ -144,8 +144,6 @@ html.is-scrolled #header {
 
   ul.menu {
     li {
-      padding: 1rem;
-
       &:hover > a {
         border-color: @teal;
       }
@@ -153,14 +151,20 @@ html.is-scrolled #header {
 
     > li {
       display: inline-block;
+      padding: 1rem;
 
       ul.sub-menu {
-        margin: 0;
+        display: inline-block;
+        margin: 0 0 0 -110px;
         opacity: 0;
         visibility: hidden;
         position: absolute;
         top: 100%;
         .transition();
+
+        > li {
+          padding: 0.5rem 1rem;
+        }
 
         a {
           font-weight: normal;
