@@ -142,7 +142,7 @@ html.is-scrolled #header {
     border-bottom: 2px solid transparent;
   }
 
-  ul {
+  ul.menu {
     li {
       display: inline-block;
       padding: 1rem;
@@ -151,28 +151,28 @@ html.is-scrolled #header {
         border-color: @teal;
       }
     }
-  }
 
-  ul.menu > li {
-    ul.sub-menu {
-      margin: 0;
-      position: absolute;
-      top: -10rem;
-      left: 0;
-      width: 100%;
-      .transition();
-
-      a {
-        font-weight: normal;
-      }
-    }
-
-    &:hover {
+    > li {
       ul.sub-menu {
-        top: 100%;
+        margin: 0;
+        position: absolute;
+        top: -10rem;
+        left: 0;
+        width: 100%;
+        .transition();
 
-        > li {
-          background-color: @grey-dark-75;
+        a {
+          font-weight: normal;
+        }
+      }
+
+      &:hover {
+        ul.sub-menu {
+          top: 100%;
+
+          > li {
+            background-color: @grey-dark-75;
+          }
         }
       }
     }
