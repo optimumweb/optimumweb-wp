@@ -2,7 +2,11 @@ $(document).ready(function() {
 
     var $window = $(window),
         $html = $('html'),
-        $body = $('body');
+        $body = $('body'),
+        $header = $('#header'),
+        $menuBurger = $('#menu-burger'),
+        $mainNav = $('#main-nav'),
+        $headerCtaNav = $('#header-cta-nav');
 
     if (typeof AOS === 'object') {
         AOS.init({
@@ -17,5 +21,12 @@ $(document).ready(function() {
         $window.scrollTop() > 0 ? $html.addClass('is-scrolled') : $html.removeClass('is-scrolled');
 
     }).trigger('check-scroll');
+
+    $menuBurger.on('click', function (e) {
+        e.preventDefault();
+
+        $mainNav.toggle();
+        $headerCtaNav.toggle();
+    });
 
 });
