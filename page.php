@@ -9,6 +9,11 @@
                         <h1 class="page-title">
                             <?php the_title(); ?>
                         </h1>
+                        <?php if ( $metadesc = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true) ) : ?>
+                            <p class="lead">
+                                <?php echo $metadesc; ?>
+                            </p>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
