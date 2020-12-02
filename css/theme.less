@@ -152,6 +152,27 @@ html.is-scrolled #header {
       border-color: @teal;
     }
   }
+
+  ul.menu > li {
+    ul.sub-menu {
+      display: none;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      a {
+        font-weight: normal;
+      }
+    }
+
+    &:hover {
+      ul.sub-menu {
+        display: block;
+      }
+    }
+  }
 }
 
 #header-cta-nav {
