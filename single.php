@@ -33,7 +33,8 @@
             <section id="main" role="main">
                 <?php wpbp_main_inside_before(); ?>
                 <div class="<?php wpbp_container_class(); ?>">
-                    <div class="grid_12">
+                    <div class="grid_2"></div>
+                    <div class="grid_8">
                         <?php wpbp_loop_before(); ?>
                         <div class="post-content">
                             <?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search ?>
@@ -47,6 +48,7 @@
                         </footer>
                         <?php wpbp_loop_after(); ?>
                     </div>
+                    <div class="grid_2"></div>
                 </div>
                 <?php wpbp_main_inside_after(); ?>
             </section>
