@@ -125,6 +125,21 @@ button {
   left: 0;
   right: 0;
   .transition();
+
+  #main-nav,
+  #header-cta-nav {
+    display: none;
+  }
+
+  &.is-open {
+    padding: 2rem 0 !important;
+    background-color: @grey-dark;
+
+    #main-nav,
+    #header-cta-nav {
+      display: block;
+    }
+  }
 }
 
 html.is-scrolled #header {
@@ -151,7 +166,6 @@ html.is-scrolled #header {
 }
 
 #burger {
-  display: none;
   position: absolute;
   top: 1rem;
   right: 2rem;
@@ -171,6 +185,8 @@ html.is-scrolled #header {
   }
 
   ul.menu {
+    display: block;
+
     li {
       &.current-menu-item > a,
       &.current_page_parent > a,
@@ -181,20 +197,13 @@ html.is-scrolled #header {
 
     > li {
       position: relative;
-      display: inline-block;
       padding: 1rem;
 
       > ul.sub-menu {
-        display: inline-block;
-        min-width: 14rem;
+        display: none;
+        width: 100%;
         margin: 0;
         padding: 1rem;
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
         .transition();
 
         > li {
@@ -208,8 +217,7 @@ html.is-scrolled #header {
 
       &:hover {
         > ul.sub-menu {
-          opacity: 1;
-          visibility: visible;
+          display: block;
         }
       }
     }

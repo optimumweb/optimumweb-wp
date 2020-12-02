@@ -9,37 +9,46 @@
 // Medium and less
 @media screen and (max-width: 64rem) {
 
+}
+
+// Large
+@media screen and (min-width: 64.063rem) {
+
   #burger {
-    display: block;
+    display: none;
   }
 
-  #header {
-    #main-nav,
-    #header-cta-nav {
-      display: none;
-    }
-
-    &.is-open {
-      padding: 2rem 0 !important;
-      background-color: @grey-dark;
-
-      #main-nav,
-      #header-cta-nav {
-        display: block;
-      }
-    }
-
+  #main-nav {
     ul.menu {
+      display: inline-block;
+
       > li {
-        display: block;
+        display: inline-block;
+
+        > ul.sub-menu {
+          display: block;
+          width: 14rem;
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+
+          > li {
+            display: block;
+          }
+        }
+        
+        &:hover {
+          > ul.sub-menu {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
       }
     }
   }
 
 }
-
-// Medium
-@media screen and (min-width: 40.063rem) and (max-width: 64rem) {}
-
-// Large
-@media screen and (min-width: 64.063rem) {}
