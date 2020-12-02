@@ -11,7 +11,7 @@
 <?php /* Start loop */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
     <?php wpbp_post_before(); ?>
-    <div class="post-container">
+    <div class="box box-grey-dark">
         <article id="post-<?php the_ID(); ?>" <?php post_class('loop'); ?>>
             <?php wpbp_post_inside_before(); ?>
             <?php if ( has_post_thumbnail() ) : ?>
