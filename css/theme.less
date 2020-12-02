@@ -306,13 +306,14 @@ html.is-scrolled #header,
 
     .post-thumbnail {
       background-color: @teal;
+      border-radius: @radius;
+      overflow: hidden;
 
       a, img {
         display: block;
       }
 
       img {
-        border-radius: @radius;
         .transition();
       }
 
