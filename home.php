@@ -7,7 +7,7 @@ get_header(); ?>
                 <div class="<?php wpbp_container_class(); ?>">
                     <div class="grid_12">
                         <h1 class="page-title">
-                            <?php _e( 'Latest Posts', 'wpbp' ); ?>
+                            <?php _e( 'Blog', 'optimumweb-wp' ); ?>
                         </h1>
                     </div>
                 </div>
