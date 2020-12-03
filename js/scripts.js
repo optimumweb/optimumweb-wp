@@ -37,20 +37,25 @@ $(document).ready(function() {
         var $content = $('<span class="typed-content"></span>').appendTo($this),
             $cursor = $('<span class="typed-cursor blinking">|</span>').appendTo($this);
 
-        var i = 0, char, sleepTime;
+        var i = 0, char, skip = 0;
 
         var interval = setInterval(function () {
-            char = html[i];
+            if (skip === 0) {
+                char = html[i];
 
-            if (typeof char === 'undefined') {
-                clearInterval(interval);
-            } else if (char === '|') {
-                char = '<br />';
+                if (typeof char === 'undefined') {
+                    clearInterval(interval);
+                } else if (char === '|') {
+                    char = '<br />';
+                    skip = 3;
+                }
+
+                $content.append(char);
+
+                i++;
+            } else {
+                skip--;
             }
-
-            $content.append(char);
-
-            i++;
         }, 100);
     });
 
