@@ -6,7 +6,7 @@ get_header(); ?>
             <div class="hero-padding">
                 <div class="<?php wpbp_container_class(); ?>">
                     <div class="grid_12">
-                        <h1 class="page-title">
+                        <h1 class="page-title typed">
                             <?php _e( 'Blog', 'optimumweb-wp' ); ?>
                         </h1>
                     </div>
