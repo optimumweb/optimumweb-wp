@@ -40,7 +40,9 @@ $(document).ready(function() {
                 if (typeof char === 'undefined') {
                     clearInterval(interval);
                 } else {
-                    console.log(char);
+                    if (char === '|') {
+                        char = '<br />';
+                    }
                     $this.html($this.html() + char);
                     i++;
                 }
