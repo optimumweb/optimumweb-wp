@@ -29,11 +29,18 @@ $(document).ready(function() {
     });
 
     $('.typed').each(function () {
-        var $this = $(this);
+        var $this = $(this),
+            text = $this.text();
 
-        new Typed($this, {
-            strings: [ $this.text() ]
-        });
+        $this.text('');
+
+        var i = 0,
+            interval = setInterval(function () {
+                $this.append(text[i++]);
+                if (typeof text[i] === 'undefined') {
+                    clearInterval(interval);
+                }
+            }, 300);
     });
 
 });
