@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     $('.typed').each(function () {
         var $this = $(this),
-            html = $this.html();
+            html = $this.html().trim();
 
         $this.text('');
 
