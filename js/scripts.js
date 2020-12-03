@@ -32,7 +32,7 @@ $(document).ready(function() {
         var $this = $(this),
             html = $this.html().trim();
 
-        $this.text('');
+        $this.html('');
 
         var $content = $('<span class="typed-content"></span>').appendTo($this),
             $cursor = $('<span class="typed-cursor blinking">|</span>').appendTo($this);
