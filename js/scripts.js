@@ -40,12 +40,13 @@ $(document).ready(function() {
                     clearInterval(interval);
                 } else {
                     var char = html[i];
+                    $this.html($this.html() + char);
                     $this.append(char);
                     i++;
                     if (char === '<') {
                         for (var j = i; html[j] !== '>'; j++) {
                             char = html[j];
-                            $this.append(char);
+                            $this.html($this.html() + char);
                         }
                         i = j;
                     }
