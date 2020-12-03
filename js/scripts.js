@@ -47,7 +47,7 @@ $(document).ready(function() {
                     clearInterval(interval);
                 } else if (char === '|') {
                     char = '<br />';
-                    skip = 3;
+                    skip = 10;
                 }
 
                 $content.append(char);
@@ -56,7 +56,7 @@ $(document).ready(function() {
             } else {
                 skip--;
             }
-        }, 100);
+        }, 150);
     });
 
 });
