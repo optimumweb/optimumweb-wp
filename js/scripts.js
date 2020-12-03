@@ -34,6 +34,9 @@ $(document).ready(function() {
 
         $this.text('');
 
+        var $content = $('<span class="typed-content"></span>').appendTo($this),
+            $cursor = $('<span class="typed-cursor blining">_</span>').appendTo($this);
+
         var i = 0,
             interval = setInterval(function () {
                 var char = html[i];
@@ -43,7 +46,7 @@ $(document).ready(function() {
                     if (char === '|') {
                         char = '<br />';
                     }
-                    $this.html($this.html() + char);
+                    $content.html($content.html() + char);
                     i++;
                 }
             }, 100);
