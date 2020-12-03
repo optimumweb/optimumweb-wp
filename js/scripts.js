@@ -28,4 +28,19 @@ $(document).ready(function() {
         $header.toggleClass('is-open');
     });
 
+    $('.teletype').each(function () {
+        var $this = $(this),
+            $cursor = $('<span class="cursor"></span>').insertAfter($this);
+
+        $this.teletype({
+            text: [ $this.text() ]
+        });
+
+        $cursor.teletype({
+            text: ['_', ' '],
+            delay: 0,
+            pause: 500
+        });
+    });
+
 });
