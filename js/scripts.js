@@ -36,12 +36,11 @@ $(document).ready(function() {
 
         var i = 0,
             interval = setInterval(function () {
-                if (typeof html[i] === 'undefined') {
+                var char = html[i];
+                if (typeof char === 'undefined') {
                     clearInterval(interval);
                 } else {
-                    var char = html[i];
                     $this.html($this.html() + char);
-                    $this.append(char);
                     i++;
                     if (char === '<') {
                         for (var j = i; html[j] !== '>'; j++) {
