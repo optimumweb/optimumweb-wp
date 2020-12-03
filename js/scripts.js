@@ -43,10 +43,12 @@ $(document).ready(function() {
                     $this.html($this.html() + char);
                     i++;
                     if (char === '<') {
+                        var tag = '';
                         for (var j = i; html[j] !== '>'; j++) {
                             char = html[j];
-                            $this.html($this.html() + char);
+                            tag = tag + char;
                         }
+                        $this.html($this.html() + tag);
                         i = j;
                     }
                 }
