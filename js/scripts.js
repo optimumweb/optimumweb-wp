@@ -41,6 +41,7 @@ $(document).ready(function() {
                 } else {
                     var char = html[i];
                     $this.append(char);
+                    i++;
                     if (char === '<') {
                         for (var j = i; html[j] !== '>'; j++) {
                             char = html[j];
@@ -48,7 +49,6 @@ $(document).ready(function() {
                         }
                         i = j;
                     }
-                    i++;
                 }
             }, 100);
     });
