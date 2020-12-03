@@ -35,7 +35,7 @@ $(document).ready(function() {
         $this.text('');
 
         var $content = $('<span class="typed-content"></span>').appendTo($this),
-            $cursor = $('<span class="typed-cursor blining">_</span>').appendTo($this);
+            $cursor = $('<span class="typed-cursor blinking">_</span>').appendTo($this);
 
         var i = 0,
             interval = setInterval(function () {
