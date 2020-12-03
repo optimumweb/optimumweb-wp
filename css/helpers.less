@@ -16,17 +16,14 @@
 }
 
 .blinking {
-  animation: blink 0.5s linear infinite;
+  animation: 1s blink step-end infinite;
 }
 
 @keyframes blink {
-  0% {
-    opacity: 0;
+  from, to {
+    color: transparent;
   }
   50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    color: black;
   }
 }
