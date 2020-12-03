@@ -40,7 +40,7 @@ $(document).ready(function() {
                 if (typeof text[i] === 'undefined') {
                     clearInterval(interval);
                 }
-            }, 300);
+            }, 100);
     });
 
 });
