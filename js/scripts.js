@@ -28,18 +28,11 @@ $(document).ready(function() {
         $header.toggleClass('is-open');
     });
 
-    $('.teletype').each(function () {
-        var $this = $(this),
-            $cursor = $('<span class="cursor"></span>').insertAfter($this);
+    $('.typed').each(function () {
+        var $this = $(this);
 
-        $this.teletype({
-            text: [ $this.text() ]
-        });
-
-        $cursor.teletype({
-            text: ['_', ' '],
-            delay: 0,
-            pause: 500
+        new Typed($this, {
+            strings: [ $this.text() ]
         });
     });
 
