@@ -28,9 +28,6 @@ $(document).ready(function() {
         $header.toggleClass('is-open');
     });
 
-});
-
-$(window).load(function () {
     $('.typed').each(function () {
         var $this = $(this),
             html = $this.html();
@@ -42,28 +39,19 @@ $(window).load(function () {
 
         var i = 0, char, sleepTime;
 
-        while (typeof html[i] !== 'undefined') {
+        var interval = setInterval(function () {
             char = html[i];
-            sleepTime = 100;
 
-            if (char === '|') {
+            if (typeof char === 'undefined') {
+                clearInterval(interval);
+            } else if (char === '|') {
                 char = '<br />';
-                sleepTime = 500;
             }
-
-            sleep(sleepTime);
 
             $content.append(char);
 
             i++;
-        }
+        });
     });
-});
 
-function sleep(ms)
-{
-    if (typeof ms === 'number') {
-        var currentTime = new Date().getTime();
-        while ( currentTime + ms >= new Date().getTime() ) {}
-    }
-}
+});
