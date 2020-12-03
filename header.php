@@ -8,7 +8,7 @@
                 <div class="grid_3 mobile-center">
                     <div id="site-logo">
                         <a href="<?php echo home_url() ?>" title="<?php bloginfo( 'name' ) ?> - <?php bloginfo( 'description' ) ?>">
-                            <img src="<?php echo THEME_URI . '/img/logo-dark.png' ?>" width="400" height="60" alt="<?php bloginfo( 'name' ) ?>">
+                            <img src="<?php echo THEME_URI . '/img/logo-dark.png' ?>" width="450" height="60" alt="<?php bloginfo( 'name' ) ?>">
                         </a>
                     </div>
                     <a id="burger" href="#">
