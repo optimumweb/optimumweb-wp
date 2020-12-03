@@ -6,7 +6,7 @@
             <div class="hero-padding">
                 <div class="<?php wpbp_container_class(); ?>">
                     <div class="grid_12">
-                        <h1 class="page-title">
+                        <h1 class="page-title typed">
                             <?php the_title(); ?>
                         </h1>
                         <?php if ( $metadesc = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true) ) : ?>
