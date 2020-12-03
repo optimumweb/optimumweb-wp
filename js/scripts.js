@@ -28,6 +28,9 @@ $(document).ready(function() {
         $header.toggleClass('is-open');
     });
 
+});
+
+$(window).load(function () {
     $('.typed').each(function () {
         var $this = $(this),
             html = $this.html();
@@ -55,7 +58,6 @@ $(document).ready(function() {
             i++;
         }
     });
-
 });
 
 function sleep(ms)
