@@ -30,15 +30,25 @@ $(document).ready(function() {
 
     $('.typed').each(function () {
         var $this = $(this),
-            text = $this.text();
+            html = $this.html();
 
         $this.text('');
 
         var i = 0,
             interval = setInterval(function () {
-                $this.append(text[i++]);
-                if (typeof text[i] === 'undefined') {
+                if (typeof html[i] === 'undefined') {
                     clearInterval(interval);
+                } else {
+                    var char = html[i];
+                    $this.append(char);
+                    if (char === '<') {
+                        for (var j = i; html[j] !== '>'; j++) {
+                            char = html[j];
+                            $this.append(char);
+                        }
+                        i = j;
+                    }
+                    i++;
                 }
             }, 100);
     });
