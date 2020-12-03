@@ -40,17 +40,9 @@ $(document).ready(function() {
                 if (typeof char === 'undefined') {
                     clearInterval(interval);
                 } else {
+                    console.log(char);
                     $this.html($this.html() + char);
                     i++;
-                    if (char === '<') {
-                        var tag = '';
-                        for (var j = i; html[j] !== '>'; j++) {
-                            char = html[j];
-                            tag = tag + char;
-                        }
-                        $this.html($this.html() + tag);
-                        i = j;
-                    }
                 }
             }, 100);
     });
